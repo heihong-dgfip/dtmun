@@ -1,0 +1,7 @@
+:host {
+  display: block;
+}
+
+.fr-collapse:not(.fr-collapse--expanded) {
+  visibility: hidden;
+}
