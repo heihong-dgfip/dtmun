@@ -3,7 +3,7 @@ import { Component, Prop, h, ComponentInterface,Element } from '@stencil/core';
 import '@gouvfr/dsfr/dist/dsfr.module.min'
  
 declare global {
-  interface Window { dsfr: {start?:Function, verbose:any, inspector?:{tree}}; }
+  interface Window { dsfr: {start?:Function, verbose:any, inspector?:{tree}, accordion?}; }
 }
 
 
@@ -34,14 +34,10 @@ export class MyComponent implements ComponentInterface {
 
   componentDidLoad(){
     console.log(window.dsfr)
-    window.dsfr = {
-      verbose: true,
-    };
+    window.dsfr.verbose =  true;
     console.log(this.el.shadowRoot.querySelector('.fr-accordion'));
+    console.log(window.dsfr.accordion)
   }
-
-
-
 
 
   render() {
