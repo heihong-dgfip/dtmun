@@ -1,7 +1,7 @@
 import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: 'dtnum',
+  namespace: 'core',
   outputTargets: [
     {
       type: 'dist',
@@ -9,6 +9,7 @@ export const config: Config = {
     },
     {
       type: 'dist-custom-elements',
+      dir: 'components',
     },
     {
       type: 'docs-readme',
