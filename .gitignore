@@ -1,7 +1,3 @@
-dist/
-www/
-loader/
-
 *~
 *.sw[mnpcod]
 *.log
@@ -11,8 +7,6 @@ loader/
 log.txt
 *.sublime-project
 *.sublime-workspace
-
-.stencil/
 .idea/
 .vscode/
 .sass-cache/
